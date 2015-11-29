@@ -48,7 +48,7 @@ module WikiCloth
 
       # if we find template variables assume document is
       # a template
-      self.sections.first.template = true if data =~ /\{\{\{\s*([A-Za-z0-9]+)\s*\}\}\}/
+      self.sections.first.template = true if data =~ /\{\{\{\s*([A-Za-z0-9\s]+)\s*\}\}\}/
 
       # If there are more than four sections enable automatic
       # table of contents
